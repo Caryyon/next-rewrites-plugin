@@ -1,0 +1,24 @@
+{
+  "name": "next-test-apps",
+  "version": "1.0.0",
+  "description": "Test environment for next-rewrites-plugin",
+  "private": true,
+  "workspaces": [
+    "main-app",
+    "service-app",
+    "blog-app"
+  ],
+  "scripts": {
+    "dev:main": "cd main-app && npm run dev",
+    "dev:service": "cd service-app && npm run dev",
+    "dev:blog": "cd blog-app && npm run dev",
+    "dev": "concurrently \"npm run dev:main\" \"npm run dev:service\" \"npm run dev:blog\"",
+    "build": "npm run build --workspaces"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

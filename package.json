@@ -1,0 +1,13 @@
+{
+  "name": "next-rewrites-monorepo",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "examples"
+  ],
+  "scripts": {
+    "build": "npm run build --workspace=packages/next-rewrites-plugin",
+    "dev": "npm run dev --workspace=examples",
+    "test": "npm run test --workspace=packages/next-rewrites-plugin"
+  }
+}
