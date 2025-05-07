@@ -17,9 +17,18 @@
     "nextjs",
     "plugin",
     "rewrites",
-    "multizone"
+    "multizone",
+    "middleware"
   ],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Caryyon/next-rewrites-plugin.git"
+  },
+  "author": "Caryyon",
+  "bugs": {
+    "url": "https://github.com/Caryyon/next-rewrites-plugin/issues"
+  },
+  "homepage": "https://github.com/Caryyon/next-rewrites-plugin#readme",
   "license": "MIT",
   "peerDependencies": {
     "next": ">=12.0.0"
